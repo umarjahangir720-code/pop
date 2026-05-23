@@ -4,13 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"npm run client\" \"npm run server\"",
-    "client": "vite",
-    "server": "node server/server.js",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+  "dev": "concurrently \"npm run client\" \"npm run server\"",
+  "client": "vite",
+  "server": "node server/server.js",
+  "start": "npm run build && node server/server.js",
+  "build": "tsc -b && vite build",
+  "postinstall": "npm run build",
+  "lint": "eslint .",
+  "preview": "vite preview"
+},
   "dependencies": {
     "@whiskeysockets/baileys": "^7.0.0-rc13",
     "cors": "^2.8.6",
