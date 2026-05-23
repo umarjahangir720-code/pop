@@ -110,12 +110,16 @@ export const initWhatsApp = async (userId, forceFresh = false) => {
       logger: pino({ level: 'warn' }), // Show warnings but not noise
       browser: ['Windows', 'Chrome', '122.0.0.0'],
       syncFullHistory: false,
-      connectTimeoutMs: 60_000,
-      defaultQueryTimeoutMs: 60_000,
+      connectTimeoutMs: 120_000,  // Increased from 60s to 120s for slower connections
+      defaultQueryTimeoutMs: 120_000,  // Increased from 60s to 120s
       keepAliveIntervalMs: 30_000,
       retryRequestDelayMs: 250,
       maxMsgRetryCount: 5,
       getMessage: async () => undefined, // Prevent message history fetching
+      shouldSyncHistoryMessage: () => false,
+      shouldIgnoreJid: (jid) => jid.includes('@broadcast'),
+      emitOwnEvents: false,
+      alwaysSubscribeToMultiDevice: true,
     });
 
     activeSockets.set(userId, sock);
@@ -157,13 +161,17 @@ export const initWhatsApp = async (userId, forceFresh = false) => {
         const isLoggedOut = statusCode === DisconnectReason.loggedOut;
         const isRestartRequired = statusCode === DisconnectReason.restartRequired; // 515
         const isLogged = state.creds && state.creds.me;
+        
+        // 408 is a temporary timeout, not a fatal error - treat it as reconnectable
+        const isTemporaryTimeout = statusCode === 408;
 
         console.log(`[WhatsApp] Connection closed for user ${userId}. Status code: ${statusCode}. LoggedOut: ${isLoggedOut}. RestartRequired: ${isRestartRequired}. IsLogged: ${!!isLogged}`);
 
+        // Only clean up on fatal authentication errors, NOT on temporary timeouts
         const shouldCleanUp = isLoggedOut || 
                              statusCode === DisconnectReason.badSession || 
                              statusCode === DisconnectReason.multideviceMismatch ||
-                             !isLogged;
+                             (!isLogged && !isTemporaryTimeout);
 
         if (shouldCleanUp) {
           console.log(`[WhatsApp] Terminating session cleanly for user ${userId}. Cleaning up files.`);
@@ -181,15 +189,21 @@ export const initWhatsApp = async (userId, forceFresh = false) => {
             try { fs.rmSync(sessionDir, { recursive: true, force: true }); } catch (_) {}
           }
         } else {
-          // Reconnect silently
+          // Reconnect silently (for all non-fatal errors including 408 timeouts)
           console.log(`[WhatsApp] Scheduling reconnect for user ${userId} (code: ${statusCode})...`);
           
           if (!isRestartRequired) {
             updateDbSessionState(userId, 'Reconnecting');
-            addSystemLog('session_reconnecting', 'WhatsApp session disconnected. Auto-reconnecting...');
+            
+            if (isTemporaryTimeout) {
+              addSystemLog('session_reconnecting', `WhatsApp connection timeout (408). Auto-reconnecting in 5 seconds...`);
+            } else {
+              addSystemLog('session_reconnecting', 'WhatsApp session disconnected. Auto-reconnecting...');
+            }
           }
 
-          // Wait 3 seconds then reconnect
+          // Wait longer for timeout errors to give WhatsApp time to recover
+          const delayMs = isTemporaryTimeout ? 5000 : 3000;
           setTimeout(async () => {
             if (!activeSockets.has(userId)) {
               console.log(`[WhatsApp] Attempting auto-reconnect for user ${userId}...`);
@@ -197,7 +211,7 @@ export const initWhatsApp = async (userId, forceFresh = false) => {
                 console.error('[WhatsApp] Failed to auto-reconnect:', err)
               );
             }
-          }, 3000);
+          }, delayMs);
         }
       } else if (connection === 'open') {
         console.log(`[WhatsApp] ✅ Connection OPEN for user ${userId}. Session active!`);
@@ -276,6 +290,12 @@ export const initWhatsApp = async (userId, forceFresh = false) => {
           console.error('[WhatsApp] Failed to process automation rule:', err);
         }
       }
+    });
+
+    // Handle socket errors to log and report connection issues
+    sock.ev.on('error', (err) => {
+      console.error(`[WhatsApp] Socket error for user ${userId}:`, err.message);
+      addSystemLog('session_error', `WhatsApp connection error: ${err.message}`);
     });
 
   } finally {
