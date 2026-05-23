@@ -639,8 +639,14 @@ app.use((req, res) => {
   res.sendFile(path.join(distPath, 'index.html'));
 });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+// Listen on all interfaces so container platforms (Railway, Heroku) can expose the port
+app.listen(PORT, '0.0.0.0', () => {
+  const publicUrl = process.env.RAILWAY_STATIC_URL || process.env.PUBLIC_URL || process.env.VERCEL_URL || null;
+  if (publicUrl) {
+    console.log(`Server is running. Public URL: ${publicUrl.replace(/^https?:\/\//, 'https://')}`);
+  } else {
+    console.log(`Server is running on port ${PORT}`);
+  }
   addSystemLog("server_start", `Backend Express engine started on port ${PORT}`);
 
   // Auto-initialize previously CONNECTED sessions at server startup.
