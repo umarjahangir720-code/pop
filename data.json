@@ -48,6 +48,13 @@
       "status": "Disconnected",
       "device_info": "Vite App User Session",
       "connected_at": null
+    },
+    {
+      "id": "sess_2dc176a798cb3eaa",
+      "user_id": "usr_demo",
+      "status": "Disconnected",
+      "device_info": "Vite App User Session",
+      "connected_at": null
     }
   ],
   "contacts": [
@@ -317,6 +324,12 @@
           "timestamp": "2026-05-23T13:23:05.214Z",
           "campaign_id": "camp_1779542525454",
           "status": "Delivered"
+        },
+        {
+          "id": "msg_agent_1779570244030",
+          "sender": "agent",
+          "content": "hi",
+          "timestamp": "2026-05-23T21:04:04.030Z"
         }
       ]
     }
@@ -366,6 +379,18 @@
   ],
   "automation_rules": [],
   "logs": [
+    {
+      "id": "log_1779570244031_5f3gg",
+      "timestamp": "2026-05-23T21:04:04.031Z",
+      "type": "message_sent",
+      "message": "[Sandbox] Sent simulated message to umare: \"hi\""
+    },
+    {
+      "id": "log_1779570234878_qw8e7",
+      "timestamp": "2026-05-23T21:03:54.878Z",
+      "type": "user_login",
+      "message": "User logged in: demo@prowp.com"
+    },
     {
       "id": "log_1779568169443_xkt3b",
       "timestamp": "2026-05-23T20:29:29.443Z",
@@ -951,18 +976,6 @@
     {
       "id": "log_1779525391929_xy1og",
       "timestamp": "2026-05-23T08:36:31.929Z",
-      "type": "session_initiate",
-      "message": "Initiated real WhatsApp Web Baileys connection."
-    },
-    {
-      "id": "log_1779525388242_tcffk",
-      "timestamp": "2026-05-23T08:36:28.242Z",
-      "type": "session_initiate",
-      "message": "Initiated real WhatsApp Web Baileys connection."
-    },
-    {
-      "id": "log_1779525388064_vwvqj",
-      "timestamp": "2026-05-23T08:36:28.064Z",
       "type": "session_initiate",
       "message": "Initiated real WhatsApp Web Baileys connection."
     }
