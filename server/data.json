@@ -1,0 +1,963 @@
+{
+  "users": [
+    {
+      "id": "usr_demo",
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "demo@prowp.com",
+      "phone": "+923244966977",
+      "password_hash": "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8",
+      "date_of_birth": "1992-05-18",
+      "gender": "Male",
+      "profile_image": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80",
+      "tier": "agency"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "sess_demo",
+      "user_id": "usr_demo",
+      "status": "Connected",
+      "device_info": "WhatsApp Web Chrome on Windows",
+      "connected_at": "2026-05-23T13:02:01.476Z"
+    },
+    {
+      "id": "sess_a898f213d7e22449",
+      "user_id": "usr_demo",
+      "status": "Disconnected",
+      "device_info": "Vite App User Session",
+      "connected_at": null
+    },
+    {
+      "id": "sess_4502aec777db948d",
+      "user_id": "usr_demo",
+      "status": "Disconnected",
+      "device_info": "Vite App User Session",
+      "connected_at": null
+    },
+    {
+      "id": "sess_91ac980633b2675e",
+      "user_id": "usr_demo",
+      "status": "Disconnected",
+      "device_info": "Vite App User Session",
+      "connected_at": null
+    }
+  ],
+  "contacts": [
+    {
+      "id": "con_1",
+      "user_id": "usr_demo",
+      "name": "Jane Smith",
+      "phone_number": "+1987654321",
+      "tags": [
+        "VIP",
+        "Interested"
+      ],
+      "stage": "Interested",
+      "notes": "Met at trade show. Highly interested in our marketing campaign tool.",
+      "messages": [
+        {
+          "id": "msg_init_1",
+          "sender": "customer",
+          "content": "Hi! I wanted to check your platform features.",
+          "timestamp": "2026-05-22T16:43:14.797Z"
+        },
+        {
+          "id": "msg_init_2",
+          "sender": "agent",
+          "content": "Hi Jane! We support automated broadcasts and deep CRM pipelines.",
+          "timestamp": "2026-05-22T16:49:14.798Z"
+        },
+        {
+          "id": "msg_agent_1779476618116",
+          "sender": "agent",
+          "content": "hi",
+          "timestamp": "2026-05-22T19:03:38.116Z"
+        },
+        {
+          "id": "msg_camp_camp_1779476551036_1779476641825_0",
+          "sender": "agent",
+          "content": "heelke kef; oeih;vhkd yghvdsugv sdh ",
+          "timestamp": "2026-05-22T19:04:01.825Z",
+          "campaign_id": "camp_1779476551036"
+        },
+        {
+          "id": "msg_1779477918910_m8fwe",
+          "sender": "customer",
+          "content": "jo",
+          "timestamp": "2026-05-22T19:25:18.910Z"
+        },
+        {
+          "id": "msg_1779478121143_upjfw",
+          "sender": "customer",
+          "content": "hi",
+          "timestamp": "2026-05-22T19:28:41.143Z"
+        },
+        {
+          "id": "msg_1779478130709_slq5w",
+          "sender": "customer",
+          "content": "ll",
+          "timestamp": "2026-05-22T19:28:50.709Z"
+        },
+        {
+          "id": "msg_camp_camp_demo_1_1779478995905_0",
+          "sender": "agent",
+          "content": "Hey Jane Smith! Welcome to proWP. Text 'demo' to schedule a call.",
+          "timestamp": "2026-05-22T19:43:15.905Z",
+          "campaign_id": "camp_demo_1"
+        },
+        {
+          "id": "msg_camp_camp_1779526611616_1779526622826_0",
+          "sender": "agent",
+          "content": "QR code displayed in the system is non-functional (mock QR)\nIt does not establish a real WhatsApp session\nNo real WhatsApp authentication or live connection occurs\nWhatsApp “connect” flow is UI simulation only",
+          "timestamp": "2026-05-23T08:57:02.826Z",
+          "campaign_id": "camp_1779526611616"
+        },
+        {
+          "id": "msg_agent_1779526814182",
+          "sender": "agent",
+          "content": "dffdsf",
+          "timestamp": "2026-05-23T09:00:14.182Z"
+        },
+        {
+          "id": "msg_camp_camp_1779542525454_1779542582481_0",
+          "sender": "agent",
+          "content": "12. Final Product Goal\n\nThe platform must operate as a fully interactive, professional WhatsApp-based SaaS CRM and marketing system where:\n\nWhatsApp remains connected reliably\nMessages send instantly\nCampaigns deliver correctly\nCustomers receive actual messages\nCRM pipelines are manageable\nAuto replies function consistently\nDashboard updates live\nChat experience feels real time\nEntire UI behaves smoothly and professionally",
+          "timestamp": "2026-05-23T13:23:02.481Z",
+          "campaign_id": "camp_1779542525454",
+          "status": "Delivered"
+        }
+      ]
+    },
+    {
+      "id": "con_2",
+      "user_id": "usr_demo",
+      "name": "Alex Rivera",
+      "phone_number": "+14155552671",
+      "tags": [
+        "Prospect"
+      ],
+      "stage": "Contacted",
+      "notes": "Filled out form on website.",
+      "messages": [
+        {
+          "id": "msg_camp_camp_1779476551036_1779476642821_1",
+          "sender": "agent",
+          "content": "heelke kef; oeih;vhkd yghvdsugv sdh ",
+          "timestamp": "2026-05-22T19:04:02.821Z",
+          "campaign_id": "camp_1779476551036"
+        },
+        {
+          "id": "msg_camp_camp_demo_1_1779478996903_1",
+          "sender": "agent",
+          "content": "Hey Alex Rivera! Welcome to proWP. Text 'demo' to schedule a call.",
+          "timestamp": "2026-05-22T19:43:16.903Z",
+          "campaign_id": "camp_demo_1"
+        },
+        {
+          "id": "msg_1779522890510_vyzo1",
+          "sender": "customer",
+          "content": "j",
+          "timestamp": "2026-05-23T07:54:50.510Z"
+        },
+        {
+          "id": "msg_camp_camp_1779526611616_1779526623837_1",
+          "sender": "agent",
+          "content": "QR code displayed in the system is non-functional (mock QR)\nIt does not establish a real WhatsApp session\nNo real WhatsApp authentication or live connection occurs\nWhatsApp “connect” flow is UI simulation only",
+          "timestamp": "2026-05-23T08:57:03.837Z",
+          "campaign_id": "camp_1779526611616"
+        },
+        {
+          "id": "msg_camp_camp_1779542525454_1779542583031_1",
+          "sender": "agent",
+          "content": "12. Final Product Goal\n\nThe platform must operate as a fully interactive, professional WhatsApp-based SaaS CRM and marketing system where:\n\nWhatsApp remains connected reliably\nMessages send instantly\nCampaigns deliver correctly\nCustomers receive actual messages\nCRM pipelines are manageable\nAuto replies function consistently\nDashboard updates live\nChat experience feels real time\nEntire UI behaves smoothly and professionally",
+          "timestamp": "2026-05-23T13:23:03.031Z",
+          "campaign_id": "camp_1779542525454",
+          "status": "Delivered"
+        }
+      ]
+    },
+    {
+      "id": "con_3",
+      "user_id": "usr_demo",
+      "name": "Sarah Connor",
+      "phone_number": "+13125559821",
+      "tags": [
+        "Customer"
+      ],
+      "stage": "Converted",
+      "notes": "Onboarded successfully.",
+      "messages": [
+        {
+          "id": "msg_init_3",
+          "sender": "agent",
+          "content": "Welcome aboard! Let us know if you need setup help.",
+          "timestamp": "2026-05-21T18:43:14.798Z"
+        },
+        {
+          "id": "msg_agent_1779476630236",
+          "sender": "agent",
+          "content": "jiiiiiiii",
+          "timestamp": "2026-05-22T19:03:50.236Z"
+        },
+        {
+          "id": "msg_camp_camp_1779476551036_1779476643825_2",
+          "sender": "agent",
+          "content": "heelke kef; oeih;vhkd yghvdsugv sdh ",
+          "timestamp": "2026-05-22T19:04:03.825Z",
+          "campaign_id": "camp_1779476551036"
+        },
+        {
+          "id": "msg_camp_camp_demo_1_1779478997906_2",
+          "sender": "agent",
+          "content": "Hey Sarah Connor! Welcome to proWP. Text 'demo' to schedule a call.",
+          "timestamp": "2026-05-22T19:43:17.906Z",
+          "campaign_id": "camp_demo_1"
+        },
+        {
+          "id": "msg_camp_camp_1779526611616_1779526624827_2",
+          "sender": "agent",
+          "content": "QR code displayed in the system is non-functional (mock QR)\nIt does not establish a real WhatsApp session\nNo real WhatsApp authentication or live connection occurs\nWhatsApp “connect” flow is UI simulation only",
+          "timestamp": "2026-05-23T08:57:04.827Z",
+          "campaign_id": "camp_1779526611616"
+        },
+        {
+          "id": "msg_camp_camp_1779542525454_1779542584048_2",
+          "sender": "agent",
+          "content": "12. Final Product Goal\n\nThe platform must operate as a fully interactive, professional WhatsApp-based SaaS CRM and marketing system where:\n\nWhatsApp remains connected reliably\nMessages send instantly\nCampaigns deliver correctly\nCustomers receive actual messages\nCRM pipelines are manageable\nAuto replies function consistently\nDashboard updates live\nChat experience feels real time\nEntire UI behaves smoothly and professionally",
+          "timestamp": "2026-05-23T13:23:04.048Z",
+          "campaign_id": "camp_1779542525454",
+          "status": "Delivered"
+        }
+      ]
+    },
+    {
+      "id": "con_1779526307642",
+      "user_id": "usr_demo",
+      "name": "umare",
+      "phone_number": "+923157378311",
+      "tags": [
+        "load ty"
+      ],
+      "stage": "Contacted",
+      "notes": "behave fake\ngenerate random setups\ncreate unrealistic entries\nuse static overlays",
+      "messages": [
+        {
+          "id": "msg_agent_1779526364941",
+          "sender": "agent",
+          "content": "hi",
+          "timestamp": "2026-05-23T08:52:44.941Z"
+        },
+        {
+          "id": "msg_1779526412915_nnoo7",
+          "sender": "customer",
+          "content": "g",
+          "timestamp": "2026-05-23T08:53:32.915Z"
+        },
+        {
+          "id": "msg_camp_camp_1779526611616_1779526625827_3",
+          "sender": "agent",
+          "content": "QR code displayed in the system is non-functional (mock QR)\nIt does not establish a real WhatsApp session\nNo real WhatsApp authentication or live connection occurs\nWhatsApp “connect” flow is UI simulation only",
+          "timestamp": "2026-05-23T08:57:05.827Z",
+          "campaign_id": "camp_1779526611616"
+        },
+        {
+          "id": "msg_agent_1779526685128",
+          "sender": "agent",
+          "content": "ji",
+          "timestamp": "2026-05-23T08:58:05.128Z"
+        },
+        {
+          "id": "msg_agent_1779526924230",
+          "sender": "agent",
+          "content": "jkhk",
+          "timestamp": "2026-05-23T09:02:04.230Z"
+        },
+        {
+          "id": "msg_1779526941190_d6df9",
+          "sender": "customer",
+          "content": " nn",
+          "timestamp": "2026-05-23T09:02:21.190Z"
+        },
+        {
+          "id": "msg_agent_1779526949424",
+          "sender": "agent",
+          "content": "mmmmmm",
+          "timestamp": "2026-05-23T09:02:29.424Z"
+        },
+        {
+          "id": "msg_agent_1779527220352",
+          "sender": "agent",
+          "content": "hi",
+          "timestamp": "2026-05-23T09:07:00.352Z"
+        },
+        {
+          "id": "msg_agent_1779527749682",
+          "sender": "agent",
+          "content": "hllo",
+          "timestamp": "2026-05-23T09:15:49.682Z"
+        },
+        {
+          "id": "msg_1779527756985_zj825",
+          "sender": "customer",
+          "content": "g",
+          "timestamp": "2026-05-23T09:15:56.985Z"
+        },
+        {
+          "id": "msg_camp_camp_1779542525454_1779542585214_3",
+          "sender": "agent",
+          "content": "12. Final Product Goal\n\nThe platform must operate as a fully interactive, professional WhatsApp-based SaaS CRM and marketing system where:\n\nWhatsApp remains connected reliably\nMessages send instantly\nCampaigns deliver correctly\nCustomers receive actual messages\nCRM pipelines are manageable\nAuto replies function consistently\nDashboard updates live\nChat experience feels real time\nEntire UI behaves smoothly and professionally",
+          "timestamp": "2026-05-23T13:23:05.214Z",
+          "campaign_id": "camp_1779542525454",
+          "status": "Delivered"
+        }
+      ]
+    }
+  ],
+  "campaigns": [
+    {
+      "id": "camp_demo_1",
+      "user_id": "usr_demo",
+      "title": "Welcome Warmup Sequence",
+      "message_content": "Hey {{name}}! Welcome to proWP. Text 'demo' to schedule a call.",
+      "schedule_time": "2026-05-22T19:43:14.798Z",
+      "status": "Completed",
+      "sent_count": 3,
+      "total_count": 3
+    },
+    {
+      "id": "camp_1779476551036",
+      "user_id": "usr_demo",
+      "title": "Umar",
+      "message_content": "heelke kef; oeih;vhkd yghvdsugv sdh ",
+      "schedule_time": "2026-05-22T19:04:00.000Z",
+      "status": "Completed",
+      "sent_count": 3,
+      "total_count": 1
+    },
+    {
+      "id": "camp_1779526611616",
+      "user_id": "usr_demo",
+      "title": "Uouoouou",
+      "message_content": "QR code displayed in the system is non-functional (mock QR)\nIt does not establish a real WhatsApp session\nNo real WhatsApp authentication or live connection occurs\nWhatsApp “connect” flow is UI simulation only",
+      "schedule_time": "2026-05-23T08:57:00.000Z",
+      "status": "Completed",
+      "sent_count": 4,
+      "total_count": 4
+    },
+    {
+      "id": "camp_1779542525454",
+      "user_id": "usr_demo",
+      "title": "umaasssddd",
+      "message_content": "12. Final Product Goal\n\nThe platform must operate as a fully interactive, professional WhatsApp-based SaaS CRM and marketing system where:\n\nWhatsApp remains connected reliably\nMessages send instantly\nCampaigns deliver correctly\nCustomers receive actual messages\nCRM pipelines are manageable\nAuto replies function consistently\nDashboard updates live\nChat experience feels real time\nEntire UI behaves smoothly and professionally",
+      "schedule_time": "2026-05-23T13:23:00.000Z",
+      "status": "Completed",
+      "sent_count": 4,
+      "total_count": 4,
+      "processed_count": 4
+    }
+  ],
+  "automation_rules": [],
+  "logs": [
+    {
+      "id": "log_1779542525476_aws9d",
+      "timestamp": "2026-05-23T13:22:05.476Z",
+      "type": "campaign_create",
+      "message": "Scheduled campaign \"umaasssddd\" for 5/23/2026, 6:23:00 PM"
+    },
+    {
+      "id": "log_1779541321476_p4dxt",
+      "timestamp": "2026-05-23T13:02:01.476Z",
+      "type": "session_connected",
+      "message": "WhatsApp Web session established for user usr_demo"
+    },
+    {
+      "id": "log_1779541319073_tzzvs",
+      "timestamp": "2026-05-23T13:01:59.073Z",
+      "type": "server_start",
+      "message": "Backend Express engine started on port 5000"
+    },
+    {
+      "id": "log_1779539202749_swuj7",
+      "timestamp": "2026-05-23T12:26:42.750Z",
+      "type": "session_connected",
+      "message": "WhatsApp Web session established for user usr_demo"
+    },
+    {
+      "id": "log_1779539202248_jj0wa",
+      "timestamp": "2026-05-23T12:26:42.248Z",
+      "type": "session_reconnecting",
+      "message": "WhatsApp session disconnected. Auto-reconnecting..."
+    },
+    {
+      "id": "log_1779539198244_gu86e",
+      "timestamp": "2026-05-23T12:26:38.244Z",
+      "type": "session_connected",
+      "message": "WhatsApp Web session established for user usr_demo"
+    },
+    {
+      "id": "log_1779539197804_ped5d",
+      "timestamp": "2026-05-23T12:26:37.804Z",
+      "type": "session_reconnecting",
+      "message": "WhatsApp session disconnected. Auto-reconnecting..."
+    },
+    {
+      "id": "log_1779539194137_oupr2",
+      "timestamp": "2026-05-23T12:26:34.137Z",
+      "type": "session_connected",
+      "message": "WhatsApp Web session established for user usr_demo"
+    },
+    {
+      "id": "log_1779539193275_peiyw",
+      "timestamp": "2026-05-23T12:26:33.275Z",
+      "type": "session_reconnecting",
+      "message": "WhatsApp session disconnected. Auto-reconnecting..."
+    },
+    {
+      "id": "log_1779539188220_id9hf",
+      "timestamp": "2026-05-23T12:26:28.220Z",
+      "type": "session_connected",
+      "message": "WhatsApp Web session established for user usr_demo"
+    },
+    {
+      "id": "log_1779539187700_4ruiq",
+      "timestamp": "2026-05-23T12:26:27.700Z",
+      "type": "session_reconnecting",
+      "message": "WhatsApp session disconnected. Auto-reconnecting..."
+    },
+    {
+      "id": "log_1779539183768_qhqmu",
+      "timestamp": "2026-05-23T12:26:23.768Z",
+      "type": "session_connected",
+      "message": "WhatsApp Web session established for user usr_demo"
+    },
+    {
+      "id": "log_1779539183327_onyfx",
+      "timestamp": "2026-05-23T12:26:23.327Z",
+      "type": "session_reconnecting",
+      "message": "WhatsApp session disconnected. Auto-reconnecting..."
+    },
+    {
+      "id": "log_1779539179718_eb9xn",
+      "timestamp": "2026-05-23T12:26:19.718Z",
+      "type": "session_connected",
+      "message": "WhatsApp Web session established for user usr_demo"
+    },
+    {
+      "id": "log_1779539178809_8ub9t",
+      "timestamp": "2026-05-23T12:26:18.809Z",
+      "type": "session_reconnecting",
+      "message": "WhatsApp session disconnected. Auto-reconnecting..."
+    },
+    {
+      "id": "log_1779539174931_542gc",
+      "timestamp": "2026-05-23T12:26:14.931Z",
+      "type": "session_connected",
+      "message": "WhatsApp Web session established for user usr_demo"
+    },
+    {
+      "id": "log_1779539174167_4lhc8",
+      "timestamp": "2026-05-23T12:26:14.167Z",
+      "type": "session_reconnecting",
+      "message": "WhatsApp session disconnected. Auto-reconnecting..."
+    },
+    {
+      "id": "log_1779539170358_3f1jh",
+      "timestamp": "2026-05-23T12:26:10.358Z",
+      "type": "session_connected",
+      "message": "WhatsApp Web session established for user usr_demo"
+    },
+    {
+      "id": "log_1779539169511_qkft4",
+      "timestamp": "2026-05-23T12:26:09.511Z",
+      "type": "session_reconnecting",
+      "message": "WhatsApp session disconnected. Auto-reconnecting..."
+    },
+    {
+      "id": "log_1779539165684_xj8wj",
+      "timestamp": "2026-05-23T12:26:05.684Z",
+      "type": "session_connected",
+      "message": "WhatsApp Web session established for user usr_demo"
+    },
+    {
+      "id": "log_1779539164831_kxgez",
+      "timestamp": "2026-05-23T12:26:04.831Z",
+      "type": "session_reconnecting",
+      "message": "WhatsApp session disconnected. Auto-reconnecting..."
+    },
+    {
+      "id": "log_1779539160972_n04sl",
+      "timestamp": "2026-05-23T12:26:00.972Z",
+      "type": "session_connected",
+      "message": "WhatsApp Web session established for user usr_demo"
+    },
+    {
+      "id": "log_1779539160534_4gn4j",
+      "timestamp": "2026-05-23T12:26:00.534Z",
+      "type": "session_reconnecting",
+      "message": "WhatsApp session disconnected. Auto-reconnecting..."
+    },
+    {
+      "id": "log_1779539156817_oqbsb",
+      "timestamp": "2026-05-23T12:25:56.817Z",
+      "type": "session_connected",
+      "message": "WhatsApp Web session established for user usr_demo"
+    },
+    {
+      "id": "log_1779539156034_3tjhk",
+      "timestamp": "2026-05-23T12:25:56.034Z",
+      "type": "session_reconnecting",
+      "message": "WhatsApp session disconnected. Auto-reconnecting..."
+    },
+    {
+      "id": "log_1779539152068_t18ru",
+      "timestamp": "2026-05-23T12:25:52.068Z",
+      "type": "session_connected",
+      "message": "WhatsApp Web session established for user usr_demo"
+    },
+    {
+      "id": "log_1779539151418_2t8bt",
+      "timestamp": "2026-05-23T12:25:51.418Z",
+      "type": "session_reconnecting",
+      "message": "WhatsApp session disconnected. Auto-reconnecting..."
+    },
+    {
+      "id": "log_1779539147663_8xjuk",
+      "timestamp": "2026-05-23T12:25:47.663Z",
+      "type": "session_connected",
+      "message": "WhatsApp Web session established for user usr_demo"
+    },
+    {
+      "id": "log_1779539146773_gx8qd",
+      "timestamp": "2026-05-23T12:25:46.773Z",
+      "type": "session_reconnecting",
+      "message": "WhatsApp session disconnected. Auto-reconnecting..."
+    },
+    {
+      "id": "log_1779539143191_asf88",
+      "timestamp": "2026-05-23T12:25:43.191Z",
+      "type": "session_connected",
+      "message": "WhatsApp Web session established for user usr_demo"
+    },
+    {
+      "id": "log_1779539142418_3y313",
+      "timestamp": "2026-05-23T12:25:42.418Z",
+      "type": "session_reconnecting",
+      "message": "WhatsApp session disconnected. Auto-reconnecting..."
+    },
+    {
+      "id": "log_1779539138865_x7k6o",
+      "timestamp": "2026-05-23T12:25:38.865Z",
+      "type": "session_connected",
+      "message": "WhatsApp Web session established for user usr_demo"
+    },
+    {
+      "id": "log_1779539138163_2g0dq",
+      "timestamp": "2026-05-23T12:25:38.163Z",
+      "type": "session_reconnecting",
+      "message": "WhatsApp session disconnected. Auto-reconnecting..."
+    },
+    {
+      "id": "log_1779539134536_03xev",
+      "timestamp": "2026-05-23T12:25:34.536Z",
+      "type": "session_connected",
+      "message": "WhatsApp Web session established for user usr_demo"
+    },
+    {
+      "id": "log_1779539133692_yv0my",
+      "timestamp": "2026-05-23T12:25:33.692Z",
+      "type": "session_reconnecting",
+      "message": "WhatsApp session disconnected. Auto-reconnecting..."
+    },
+    {
+      "id": "log_1779539129809_luzj7",
+      "timestamp": "2026-05-23T12:25:29.809Z",
+      "type": "session_connected",
+      "message": "WhatsApp Web session established for user usr_demo"
+    },
+    {
+      "id": "log_1779539129071_g4cf6",
+      "timestamp": "2026-05-23T12:25:29.071Z",
+      "type": "session_reconnecting",
+      "message": "WhatsApp session disconnected. Auto-reconnecting..."
+    },
+    {
+      "id": "log_1779539125172_x9x8v",
+      "timestamp": "2026-05-23T12:25:25.172Z",
+      "type": "session_connected",
+      "message": "WhatsApp Web session established for user usr_demo"
+    },
+    {
+      "id": "log_1779539124407_5zxso",
+      "timestamp": "2026-05-23T12:25:24.407Z",
+      "type": "session_reconnecting",
+      "message": "WhatsApp session disconnected. Auto-reconnecting..."
+    },
+    {
+      "id": "log_1779539120645_yxbx6",
+      "timestamp": "2026-05-23T12:25:20.645Z",
+      "type": "session_connected",
+      "message": "WhatsApp Web session established for user usr_demo"
+    },
+    {
+      "id": "log_1779539119758_sq70d",
+      "timestamp": "2026-05-23T12:25:19.758Z",
+      "type": "session_reconnecting",
+      "message": "WhatsApp session disconnected. Auto-reconnecting..."
+    },
+    {
+      "id": "log_1779539116164_1i6nn",
+      "timestamp": "2026-05-23T12:25:16.164Z",
+      "type": "session_connected",
+      "message": "WhatsApp Web session established for user usr_demo"
+    },
+    {
+      "id": "log_1779539115441_w5r5j",
+      "timestamp": "2026-05-23T12:25:15.441Z",
+      "type": "session_reconnecting",
+      "message": "WhatsApp session disconnected. Auto-reconnecting..."
+    },
+    {
+      "id": "log_1779539111572_kxc06",
+      "timestamp": "2026-05-23T12:25:11.572Z",
+      "type": "session_connected",
+      "message": "WhatsApp Web session established for user usr_demo"
+    },
+    {
+      "id": "log_1779539111091_l08uw",
+      "timestamp": "2026-05-23T12:25:11.091Z",
+      "type": "session_reconnecting",
+      "message": "WhatsApp session disconnected. Auto-reconnecting..."
+    },
+    {
+      "id": "log_1779539107198_tapyy",
+      "timestamp": "2026-05-23T12:25:07.198Z",
+      "type": "session_connected",
+      "message": "WhatsApp Web session established for user usr_demo"
+    },
+    {
+      "id": "log_1779539106584_e05tp",
+      "timestamp": "2026-05-23T12:25:06.584Z",
+      "type": "session_reconnecting",
+      "message": "WhatsApp session disconnected. Auto-reconnecting..."
+    },
+    {
+      "id": "log_1779539102708_yl42f",
+      "timestamp": "2026-05-23T12:25:02.708Z",
+      "type": "session_connected",
+      "message": "WhatsApp Web session established for user usr_demo"
+    },
+    {
+      "id": "log_1779539101983_3bveo",
+      "timestamp": "2026-05-23T12:25:01.983Z",
+      "type": "session_reconnecting",
+      "message": "WhatsApp session disconnected. Auto-reconnecting..."
+    },
+    {
+      "id": "log_1779539100333_625ar",
+      "timestamp": "2026-05-23T12:25:00.333Z",
+      "type": "server_start",
+      "message": "Backend Express engine started on port 5000"
+    },
+    {
+      "id": "log_1779538971222_ypv0j",
+      "timestamp": "2026-05-23T12:22:51.222Z",
+      "type": "session_connected",
+      "message": "WhatsApp Web session established for user usr_demo"
+    },
+    {
+      "id": "log_1779538968985_ockew",
+      "timestamp": "2026-05-23T12:22:48.985Z",
+      "type": "server_start",
+      "message": "Backend Express engine started on port 5000"
+    },
+    {
+      "id": "log_1779527822474_lbpos",
+      "timestamp": "2026-05-23T09:17:02.474Z",
+      "type": "user_billing",
+      "message": "User tier upgraded to: AGENCY"
+    },
+    {
+      "id": "log_1779527821323_wq59t",
+      "timestamp": "2026-05-23T09:17:01.323Z",
+      "type": "user_billing",
+      "message": "User tier upgraded to: PROFESSIONAL"
+    },
+    {
+      "id": "log_1779527800149_fio0i",
+      "timestamp": "2026-05-23T09:16:40.150Z",
+      "type": "user_profile",
+      "message": "User profile updated for: demo@prowp.com"
+    },
+    {
+      "id": "log_1779527749687_492x7",
+      "timestamp": "2026-05-23T09:15:49.687Z",
+      "type": "message_sent",
+      "message": "Sent real message to umare: \"hllo\""
+    },
+    {
+      "id": "log_1779527220356_puxcd",
+      "timestamp": "2026-05-23T09:07:00.356Z",
+      "type": "message_sent",
+      "message": "Sent real message to umare: \"hi\""
+    },
+    {
+      "id": "log_1779527101673_kqf0x",
+      "timestamp": "2026-05-23T09:05:01.673Z",
+      "type": "rule_delete",
+      "message": "Deleted automation rule for keyword \"you\""
+    },
+    {
+      "id": "log_1779527101304_0mdum",
+      "timestamp": "2026-05-23T09:05:01.304Z",
+      "type": "rule_delete",
+      "message": "Deleted automation rule for keyword \"demo\""
+    },
+    {
+      "id": "log_1779527100785_r32ib",
+      "timestamp": "2026-05-23T09:05:00.785Z",
+      "type": "rule_delete",
+      "message": "Deleted automation rule for keyword \"price\""
+    },
+    {
+      "id": "log_1779526949430_9twen",
+      "timestamp": "2026-05-23T09:02:29.430Z",
+      "type": "message_sent",
+      "message": "Sent real message to umare: \"mmmmmm\""
+    },
+    {
+      "id": "log_1779526924233_iy4tk",
+      "timestamp": "2026-05-23T09:02:04.233Z",
+      "type": "message_sent",
+      "message": "Sent real message to umare: \"jkhk\""
+    },
+    {
+      "id": "log_1779526814186_lud9h",
+      "timestamp": "2026-05-23T09:00:14.186Z",
+      "type": "message_sent",
+      "message": "Sent real message to Jane Smith: \"dffdsf\""
+    },
+    {
+      "id": "log_1779526750803_abl5q",
+      "timestamp": "2026-05-23T08:59:10.803Z",
+      "type": "user_billing",
+      "message": "User tier upgraded to: FREE"
+    },
+    {
+      "id": "log_1779526685131_sc5ux",
+      "timestamp": "2026-05-23T08:58:05.131Z",
+      "type": "message_sent",
+      "message": "Sent real message to umare: \"ji\""
+    },
+    {
+      "id": "log_1779526611643_bb4el",
+      "timestamp": "2026-05-23T08:56:51.643Z",
+      "type": "campaign_create",
+      "message": "Scheduled campaign \"Uouoouou\" for 5/23/2026, 1:57:00 PM"
+    },
+    {
+      "id": "log_1779526480540_0vz3k",
+      "timestamp": "2026-05-23T08:54:40.540Z",
+      "type": "user_profile",
+      "message": "User profile updated for: demo@prowp.com"
+    },
+    {
+      "id": "log_1779526457669_7y1en",
+      "timestamp": "2026-05-23T08:54:17.669Z",
+      "type": "user_profile",
+      "message": "User profile updated for: demo@prowp.com"
+    },
+    {
+      "id": "log_1779526364941_2ortw",
+      "timestamp": "2026-05-23T08:52:44.941Z",
+      "type": "message_sent",
+      "message": "Sent real message to umare: \"hi\""
+    },
+    {
+      "id": "log_1779526346095_uollz",
+      "timestamp": "2026-05-23T08:52:26.095Z",
+      "type": "rule_create",
+      "message": "Created automation rule for keyword \"you\""
+    },
+    {
+      "id": "log_1779526307643_it36p",
+      "timestamp": "2026-05-23T08:51:47.643Z",
+      "type": "contact_create",
+      "message": "Created contact \"umare\" (+923157378311)"
+    },
+    {
+      "id": "log_1779526197434_mfyn9",
+      "timestamp": "2026-05-23T08:49:57.434Z",
+      "type": "session_connected",
+      "message": "WhatsApp Web session established for user usr_demo"
+    },
+    {
+      "id": "log_1779526185212_x6fy9",
+      "timestamp": "2026-05-23T08:49:45.212Z",
+      "type": "session_initiate",
+      "message": "Initiated real WhatsApp Web Baileys connection."
+    },
+    {
+      "id": "log_1779526167111_peo6a",
+      "timestamp": "2026-05-23T08:49:27.111Z",
+      "type": "server_start",
+      "message": "Backend Express engine started on port 5000"
+    },
+    {
+      "id": "log_1779526119191_9zjtb",
+      "timestamp": "2026-05-23T08:48:39.191Z",
+      "type": "session_reconnecting",
+      "message": "WhatsApp session disconnected. Auto-reconnecting..."
+    },
+    {
+      "id": "log_1779525956999_7zhob",
+      "timestamp": "2026-05-23T08:45:56.999Z",
+      "type": "session_initiate",
+      "message": "Initiated real WhatsApp Web Baileys connection."
+    },
+    {
+      "id": "log_1779525948854_r9ok6",
+      "timestamp": "2026-05-23T08:45:48.854Z",
+      "type": "server_start",
+      "message": "Backend Express engine started on port 5000"
+    },
+    {
+      "id": "log_1779525833220_x05il",
+      "timestamp": "2026-05-23T08:43:53.220Z",
+      "type": "session_reconnecting",
+      "message": "WhatsApp session disconnected. Auto-reconnecting..."
+    },
+    {
+      "id": "log_1779525832801_rwfub",
+      "timestamp": "2026-05-23T08:43:52.801Z",
+      "type": "session_reconnecting",
+      "message": "WhatsApp session disconnected. Auto-reconnecting..."
+    },
+    {
+      "id": "log_1779525669360_23vny",
+      "timestamp": "2026-05-23T08:41:09.360Z",
+      "type": "session_reconnecting",
+      "message": "WhatsApp session disconnected. Auto-reconnecting..."
+    },
+    {
+      "id": "log_1779525669119_cp62l",
+      "timestamp": "2026-05-23T08:41:09.119Z",
+      "type": "session_reconnecting",
+      "message": "WhatsApp session disconnected. Auto-reconnecting..."
+    },
+    {
+      "id": "log_1779525606663_3seb3",
+      "timestamp": "2026-05-23T08:40:06.663Z",
+      "type": "session_reconnecting",
+      "message": "WhatsApp session disconnected. Auto-reconnecting..."
+    },
+    {
+      "id": "log_1779525506789_f80i6",
+      "timestamp": "2026-05-23T08:38:26.789Z",
+      "type": "session_reconnecting",
+      "message": "WhatsApp session disconnected. Auto-reconnecting..."
+    },
+    {
+      "id": "log_1779525506511_mfgxr",
+      "timestamp": "2026-05-23T08:38:26.511Z",
+      "type": "session_reconnecting",
+      "message": "WhatsApp session disconnected. Auto-reconnecting..."
+    },
+    {
+      "id": "log_1779525443042_rvg7a",
+      "timestamp": "2026-05-23T08:37:23.042Z",
+      "type": "session_reconnecting",
+      "message": "WhatsApp session disconnected. Auto-reconnecting..."
+    },
+    {
+      "id": "log_1779525393776_aoonf",
+      "timestamp": "2026-05-23T08:36:33.776Z",
+      "type": "session_initiate",
+      "message": "Initiated real WhatsApp Web Baileys connection."
+    },
+    {
+      "id": "log_1779525393608_jnjzm",
+      "timestamp": "2026-05-23T08:36:33.608Z",
+      "type": "session_initiate",
+      "message": "Initiated real WhatsApp Web Baileys connection."
+    },
+    {
+      "id": "log_1779525393444_fe5va",
+      "timestamp": "2026-05-23T08:36:33.444Z",
+      "type": "session_initiate",
+      "message": "Initiated real WhatsApp Web Baileys connection."
+    },
+    {
+      "id": "log_1779525393288_5tcdt",
+      "timestamp": "2026-05-23T08:36:33.288Z",
+      "type": "session_initiate",
+      "message": "Initiated real WhatsApp Web Baileys connection."
+    },
+    {
+      "id": "log_1779525393114_08xfs",
+      "timestamp": "2026-05-23T08:36:33.114Z",
+      "type": "session_initiate",
+      "message": "Initiated real WhatsApp Web Baileys connection."
+    },
+    {
+      "id": "log_1779525392930_77xtw",
+      "timestamp": "2026-05-23T08:36:32.930Z",
+      "type": "session_initiate",
+      "message": "Initiated real WhatsApp Web Baileys connection."
+    },
+    {
+      "id": "log_1779525392769_lbi4q",
+      "timestamp": "2026-05-23T08:36:32.769Z",
+      "type": "session_initiate",
+      "message": "Initiated real WhatsApp Web Baileys connection."
+    },
+    {
+      "id": "log_1779525392576_32lop",
+      "timestamp": "2026-05-23T08:36:32.576Z",
+      "type": "session_initiate",
+      "message": "Initiated real WhatsApp Web Baileys connection."
+    },
+    {
+      "id": "log_1779525392354_tb3u9",
+      "timestamp": "2026-05-23T08:36:32.354Z",
+      "type": "session_initiate",
+      "message": "Initiated real WhatsApp Web Baileys connection."
+    },
+    {
+      "id": "log_1779525391929_xy1og",
+      "timestamp": "2026-05-23T08:36:31.929Z",
+      "type": "session_initiate",
+      "message": "Initiated real WhatsApp Web Baileys connection."
+    },
+    {
+      "id": "log_1779525388242_tcffk",
+      "timestamp": "2026-05-23T08:36:28.242Z",
+      "type": "session_initiate",
+      "message": "Initiated real WhatsApp Web Baileys connection."
+    },
+    {
+      "id": "log_1779525388064_vwvqj",
+      "timestamp": "2026-05-23T08:36:28.064Z",
+      "type": "session_initiate",
+      "message": "Initiated real WhatsApp Web Baileys connection."
+    },
+    {
+      "id": "log_1779525387873_zyowr",
+      "timestamp": "2026-05-23T08:36:27.873Z",
+      "type": "session_initiate",
+      "message": "Initiated real WhatsApp Web Baileys connection."
+    },
+    {
+      "id": "log_1779525387416_wbqiq",
+      "timestamp": "2026-05-23T08:36:27.416Z",
+      "type": "session_initiate",
+      "message": "Initiated real WhatsApp Web Baileys connection."
+    },
+    {
+      "id": "log_1779525387226_hwfcs",
+      "timestamp": "2026-05-23T08:36:27.226Z",
+      "type": "session_initiate",
+      "message": "Initiated real WhatsApp Web Baileys connection."
+    }
+  ]
+}
