@@ -8,13 +8,7 @@ export default defineConfig({
     react(),
     babel({ presets: [reactCompilerPreset()] })
   ],
-  server: {
-    proxy: {
-      '/api': {
-        target: 'http://localhost:5000',
-        changeOrigin: true,
-        secure: false,
-      }
-    }
-  }
+  // In production we use VITE_BACKEND_URL to point frontend to the deployed backend.
+  // The local dev proxy is intentionally disabled here so production builds don't
+  // accidentally depend on localhost.
 })

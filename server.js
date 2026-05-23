@@ -11,7 +11,23 @@ import { initWhatsApp, getLatestQR, sendWhatsAppMessage, disconnectWhatsApp, isS
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors());
+// Configure CORS origins via env var `ALLOWED_ORIGINS` (comma-separated).
+// If not provided, allow all origins for ease of deployment. For production,
+// set `ALLOWED_ORIGINS` to your Hostinger domain (e.g. https://example.com)
+const allowedOriginsEnv = process.env.ALLOWED_ORIGINS || process.env.FRONTEND_URL || '';
+const allowedOrigins = allowedOriginsEnv.split(',').map(s => s.trim()).filter(Boolean);
+app.use(cors({
+  origin: (origin, callback) => {
+    // Allow non-browser tools (no origin) such as curl/Postman
+    if (!origin) return callback(null, true);
+    // If no allowedOrigins configured, treat as permissive
+    if (allowedOrigins.length === 0) return callback(null, true);
+    if (allowedOrigins.includes(origin)) return callback(null, true);
+    return callback(new Error('CORS not allowed by server'));
+  },
+  credentials: true
+}));
+
 app.use(express.json({ limit: '10mb' })); // Increased limit for Base64 Profile Images
 
 // Enable active cron-style background scheduling
