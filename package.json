@@ -6,8 +6,8 @@
   "scripts": {
   "dev": "concurrently \"npm run client\" \"npm run server\"",
   "client": "vite",
-  "server": "node server/server.js",
-  "start": "npm run build && node server/server.js",
+  "server": "node server.js",
+  "start": "npm run build && node server.js",
   "build": "tsc -b && vite build",
   "postinstall": "npm run build",
   "lint": "eslint .",
