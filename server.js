@@ -11,6 +11,10 @@ import { initWhatsApp, getLatestQR, sendWhatsAppMessage, disconnectWhatsApp, isS
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+app.listen(PORT, () => {
+  console.log("Server running on " + PORT);
+});
+
 // Configure CORS origins via env var `ALLOWED_ORIGINS` (comma-separated).
 // If not provided, allow all origins for ease of deployment. For production,
 // set `ALLOWED_ORIGINS` to your Hostinger domain (e.g. https://example.com)
